@@ -1,0 +1,9 @@
+# docker-compose2.yml
+version: "3.7"
+
+services:
+  myapp:
+    image: custom-nginx
+    build: src/ # Dockerfile이 있는 디렉토리
+    ports:
+      - '8080:80'
